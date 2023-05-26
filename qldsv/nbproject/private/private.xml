@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/daos/DiemDAO.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/web/views/admin/diem.jsp</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/models/tinchi.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/controllers/AdminGiangVienController.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/controllers/AdminSinhVienController.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/web/templates/admin/inc/header.jsp</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/models/Khoa.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/web/views/admin/index.jsp</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/models/giangvien.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/controllers/AdminInScoreController.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/models/sinhvien.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/models/hocky.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/web/views/admin/giangvien.jsp</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/daos/SinhVienDAO.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/models/namhoc.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/web/views/login/login.jsp</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/models/diem.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/web/templates/admin/inc/menu.jsp</file>
+            <file>file:/D:/NetBeansProjects/qldsv/web/WEB-INF/web.xml</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/daos/GiangVienDAO.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/web/views/admin/inScore.jsp</file>
+            <file>file:/D:/NetBeansProjects/qldsv/web/views/admin/sinhvien.jsp</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/daos/AbstractDAO.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/models/monhoc.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/controllers/AdminDiemController.java</file>
+            <file>file:/D:/NetBeansProjects/qldsv/src/java/models/theloai.java</file>
+        </group>
+    </open-files>
+</project-private>
