@@ -5,6 +5,7 @@
 package controllers;
 
 import daos.DiemDAO;
+import daos.SinhVienDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -71,7 +72,6 @@ public class AdminDiemController extends HttpServlet {
         DiemDAO diemDAO = new DiemDAO();
         List<diem> diemList = diemDAO.findAll();
         request.setAttribute("diemList", diemList);
-
         RequestDispatcher rd = request.getRequestDispatcher("/views/admin/diem.jsp");
         rd.forward(request, response);
     }

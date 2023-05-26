@@ -22,8 +22,9 @@ public class sinhvien {
         this.lop = lop;
     }
 
-    public sinhvien(int maSV) {
+    public sinhvien(int maSV, String tenSV) {
         this.maSV = maSV;
+        this.tenSV = tenSV;
     }
     
     public int getMaSV() {
