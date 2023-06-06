@@ -18,6 +18,11 @@ public class monhoc {
         this.tinchi = tinchi;
         this.theloai = theloai;
     }
+    
+    public monhoc(String maMH, String tenMH) {
+        this.maMH = maMH;
+        this.tenMH = tenMH;
+    }
 
     public monhoc(String maMH) {
         this.maMH = maMH;

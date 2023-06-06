@@ -202,16 +202,12 @@
                         </li>
                         <li class="nav-item">
                             <a href="<%=request.getContextPath()%>/admin/tktheoloaidiem" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Thống kê theo loại điểm</p>
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Thống kê theo loại điểm
+                                </p>
                             </a>
                         </li>
-<!--                        <li class="nav-item">
-                            <a href="<%=request.getContextPath()%>/admin/thongke" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Thống kê theo môn học</p>
-                            </a>
-                        </li>-->
                     </ul>
                 </li>
             </ul>
