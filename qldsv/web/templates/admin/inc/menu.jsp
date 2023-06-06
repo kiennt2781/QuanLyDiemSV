@@ -69,14 +69,14 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="<%=request.getContextPath()%>/admin/diem" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>
-                            Xem điểm
-                        </p>
-                    </a>
-                </li>
+                <!--                <li class="nav-item">
+                                    <a href="<%=request.getContextPath()%>/admin/diem" class="nav-link">
+                                        <i class="nav-icon fas fa-th"></i>
+                                        <p>
+                                            Xem điểm
+                                        </p>
+                                    </a>
+                                </li>-->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
@@ -108,7 +108,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Thông Tin Môn Học
                             <i class="right fas fa-angle-left"></i>
@@ -180,6 +180,38 @@
                                 <p>Loại tài khoản</p>
                             </a>
                         </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <p>
+                            Thống kê điểm
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<%=request.getContextPath()%>/admin/diem" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Xem điểm
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<%=request.getContextPath()%>/admin/tktheoloaidiem" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Thống kê theo loại điểm</p>
+                            </a>
+                        </li>
+<!--                        <li class="nav-item">
+                            <a href="<%=request.getContextPath()%>/admin/thongke" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Thống kê theo môn học</p>
+                            </a>
+                        </li>-->
                     </ul>
                 </li>
             </ul>

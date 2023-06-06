@@ -34,7 +34,8 @@ public class DiemDAO extends AbstractDAO {
             pst.setString(9, objDiem.getTheloai().getMaTL());
             pst.setString(10, objDiem.getHocky().getMaHK());
             pst.setString(11, objDiem.getNamhoc().getMaNH());
-            result = pst.executeUpdate();
+            result = 3;
+            pst.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -56,7 +57,7 @@ public class DiemDAO extends AbstractDAO {
                         rs.getFloat("heso6"),
                         rs.getFloat("tongDiem"),
                         new giangvien(rs.getString("maGV")),
-                        new sinhvien(rs.getInt("maSV"),svDAO.findTenById(rs.getInt("maSV"))),
+                        new sinhvien(rs.getInt("maSV"), svDAO.findTenById(rs.getInt("maSV"))),
                         new monhoc(rs.getString("maMH")),
                         new tinchi(rs.getString("maTC")),
                         new theloai(rs.getString("maTL")),
@@ -70,5 +71,5 @@ public class DiemDAO extends AbstractDAO {
         }
         return diemList;
     }
-    
+
 }

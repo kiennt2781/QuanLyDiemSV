@@ -72,7 +72,6 @@
 	      <th scope="col">Tài khoản</th>
 	      <th scope="col">Email</th>
 	      <th scope="col">Loại tài khoản</th>
-	      <th scope="col">Chức năng</th>
 	    </tr>
 	  </thead>
 	  <tbody>
@@ -87,12 +86,6 @@
 	      <td><%=objTK.getUsername() %></td>
 	      <td><%=objTK.getEmail() %></td>
 	      <td><%=objTK.getRole().getRole() %></td>
-	     <td>
-	    	<%-- <button type="button" class="btn btn-warning suaMenu" data-toggle="modal" data-target="#exampleModalSua">
-				<a href="<%=request.getContextPath()%>/admin/menu/edit?id=">Cập nhật</a>
-			</button>
-	     	<button xoaMenu="" type="button" class="btn btn-danger">Xóa</button> --%>
-	     </td>
 	    </tr>
 				  <%
 			  }

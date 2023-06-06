@@ -70,7 +70,6 @@
 	      <th scope="col">Tên Giảng viên</th>
 	      <th scope="col">Địa chỉ</th>
 	      <th scope="col">Số điện thoại</th>
-	      <th scope="col">Chức năng</th>
 	    </tr>
 	  </thead>
 	  <tbody>
@@ -86,12 +85,6 @@
 	      <td><%=objGV.getTenGV() %></td>
 	      <td><%=objGV.getDiaChi() %></td>
 	      <td><%=objGV.getSdt() %></td>
-	     <td>
-	    	<%-- <button type="button" class="btn btn-warning suaMenu" data-toggle="modal" data-target="#exampleModalSua">
-				<a href="<%=request.getContextPath()%>/admin/menu/edit?id=">Cập nhật</a>
-			</button>
-	     	<button xoaMenu="" type="button" class="btn btn-danger">Xóa</button> --%>
-	     </td>
 	    </tr>
 				  <%
 			  }

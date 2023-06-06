@@ -68,7 +68,6 @@
 	      <th scope="col">#</th>
 	      <th scope="col">Mã Thể Loại</th>
 	      <th scope="col">Thể Loại</th>
-	      <th scope="col">Chức năng</th>
 	    </tr>
 	  </thead>
 	  <tbody>
@@ -82,12 +81,6 @@
 	      <th scope="row"><input type="checkbox" name="vehicle1" value="Bike"></th>
 	      <td><%=objTL.getMaTL() %></td>
 	      <td><%=objTL.getTenTL() %></td>
-	     <td>
-	    	<%-- <button type="button" class="btn btn-warning suaMenu" data-toggle="modal" data-target="#exampleModalSua">
-				<a href="<%=request.getContextPath()%>/admin/menu/edit?id=">Cập nhật</a>
-			</button>
-	     	<button xoaMenu="" type="button" class="btn btn-danger">Xóa</button> --%>
-	     </td>
 	    </tr>
 				  <%
 			  }

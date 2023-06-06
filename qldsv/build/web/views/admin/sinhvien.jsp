@@ -70,7 +70,6 @@
                         <th scope="col">Địa chỉ</th>
                         <th scope="col">Số điện thoại</th>
                         <th scope="col">Lớp</th>
-                        <th scope="col">Chức năng</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -87,12 +86,6 @@
                         <td><%=objSV.getDiaChi()%></td>
                         <td><%=objSV.getSdt()%></td>
                         <td><%=objSV.getLop().getTenLop()%></td>
-                        <td>
-                            <%-- <button type="button" class="btn btn-warning suaMenu" data-toggle="modal" data-target="#exampleModalSua">
-                                            <a href="<%=request.getContextPath()%>/admin/menu/edit?id=">Cập nhật</a>
-                                    </button>
-                            <button xoaMenu="" type="button" class="btn btn-danger">Xóa</button> --%>
-                        </td>
                     </tr>
                     <%
                                 }
@@ -121,23 +114,23 @@
 
                         <div class="form-group row">
                             <label for="exampleFormControlFile1" class="col-sm-3">Mã sinh viên</label>
-                            <input type="text" class="form-control-file col-sm-8" id="exampleFormControlFile1" name="masv">
+                            <input type="text" required class="form-control-file col-sm-8" id="exampleFormControlFile1" name="masv">
                         </div>
                         <div class="form-group row">
                             <label for="exampleFormControlFile1" class="col-sm-3">Tên sinh viên</label>
-                            <input type="text" class="form-control-file col-sm-8" id="exampleFormControlFile1" name="tensv">
+                            <input type="text" required class="form-control-file col-sm-8" id="exampleFormControlFile1" name="tensv">
                         </div>
                         <div class="form-group row">
                             <label for="exampleFormControlFile1" class="col-sm-3">Địa chỉ</label>
-                            <input type="text" class="form-control-file col-sm-8" id="exampleFormControlFile1" name="diachi">
+                            <input type="text" required class="form-control-file col-sm-8" id="exampleFormControlFile1" name="diachi">
                         </div>
                         <div class="form-group row">
                             <label for="exampleFormControlFile1" class="col-sm-3">Số điện thoại</label>
-                            <input type="text" class="form-control-file col-sm-8" id="exampleFormControlFile1" name="sdt">
+                            <input type="text" required class="form-control-file col-sm-8" id="exampleFormControlFile1" name="sdt">
                         </div>
                         <div class="form-group row">
                             <label for="exampleFormControlFile1" class="col-sm-3">Email</label>
-                            <input type="text" class="form-control-file col-sm-8" id="exampleFormControlFile1" name="email">
+                            <input type="text" required class="form-control-file col-sm-8" id="exampleFormControlFile1" name="email">
                         </div>
                         <div class="form-group row">
                             <label for="exampleFormControlFile1" class="col-sm-3">Lớp</label>
@@ -159,7 +152,7 @@
                                     }
                                 }
                             %>
-                        </div>
+                        </div> 
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
                             <button type="submit" class="btn btn-primary">Thêm</button>

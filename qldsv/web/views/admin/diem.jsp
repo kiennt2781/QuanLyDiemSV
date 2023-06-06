@@ -9,6 +9,7 @@
 <%@page import="models.monhoc"%>
 <%@page import="java.util.List"%>
 <%@page import="daos.SinhVienDAO"%>
+<%@page import="daos.MonHocDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
 <%@include file="/templates/admin/inc/header.jsp" %>
@@ -45,6 +46,7 @@
                         <!--<th scope="col">#</th>-->
                         <th scope="col">Mã Sinh viên</th>
                         <th scope="col">Tên Sinh viên</th>
+                        <th scope="col">Tên Môn học</th>
                         <th scope="col">Hệ số 1</th>
                         <th scope="col">Hệ số 3</th>
                         <th scope="col">Hệ số 6</th>
@@ -59,6 +61,7 @@
                 </thead>
                 <tbody>
                     <%  SinhVienDAO svDAO = new SinhVienDAO();
+                        MonHocDAO mhDAO = new MonHocDAO();
                         if (request.getAttribute("diemList") != null) {
                             List<diem> diemList = (List<diem>) request.getAttribute("diemList");
                             if (diemList.size() > 0) {
@@ -68,7 +71,7 @@
                         <!--<th scope="row"><input type="checkbox" name="vehicle1" value="Bike"></th>-->
                         <td><%=diem.getSinhvien().getMaSV()%></td>
                         <td><%=svDAO.findTenById(diem.getSinhvien().getMaSV())%></td>
-                        <!--<td><%=diem.getMaBD()%></td>-->
+                        <td><%=mhDAO.findTenById(diem.getMonhoc().getMaMH())%></td>
                         <td><%=diem.getHeso1()%></td>
                         <td><%=diem.getHeso3()%></td>
                         <td><%=diem.getHeso6()%></td>

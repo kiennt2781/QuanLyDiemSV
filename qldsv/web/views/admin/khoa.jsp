@@ -70,7 +70,6 @@
 	      <th scope="col">Mã Khoa</th>
 	      <th scope="col">Khoa</th>
 	      <th scope="col">Liên Hệ</th>
-	      <th scope="col">Chức năng</th>
 	    </tr>
 	  </thead>
 	  <tbody>
@@ -85,12 +84,6 @@
 	      <td><%=objK.getMaKH()%></td>
 	      <td><%=objK.getTenKH() %></td>
 	      <td><%=objK.getLienheKH() %></td>
-	     <td>
-	    	<%-- <button type="button" class="btn btn-warning suaMenu" data-toggle="modal" data-target="#exampleModalSua">
-				<a href="<%=request.getContextPath()%>/admin/menu/edit?id=">Cập nhật</a>
-			</button>
-	     	<button xoaMenu="" type="button" class="btn btn-danger">Xóa</button> --%>
-	     </td>
 	    </tr>
 				  <%
 			  }
