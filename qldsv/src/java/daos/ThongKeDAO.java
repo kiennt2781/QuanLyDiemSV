@@ -112,116 +112,99 @@ public class ThongKeDAO {
         return n;
     }
 
-//    public static int findAByMon(String maMH) {
-//        Connection con = DBConnectionUtils.getConnection();
-//        int n = 0;
-//        String sql = "SELECT count(maBD) \n"
-//                + "from diem\n"
-//                + "where tongDiem >= 8.5 and maMH = ?";
-//        try {
-//            PreparedStatement pt = con.prepareStatement(sql);
-//            pt.setString(1, maMH);
-//            ResultSet rs = pt.executeQuery();
-//            while (rs.next()) {
-//                n = rs.getInt("count(maBD)");
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return n;
-//    }
-//
-//    public static int findBByMon(String maMH) {
-//        Connection con = DBConnectionUtils.getConnection();
-//        int n = 0;
-//        String sql = "SELECT count(maBD) \n"
-//                + "from diem\n"
-//                + "where tongDiem >= 7 and tongDiem < 8.5 and maMH = ?";
-//        try {
-//            PreparedStatement pt = con.prepareStatement(sql);
-//            pt.setString(1, maMH);
-//            ResultSet rs = pt.executeQuery();
-//            while (rs.next()) {
-//                n = rs.getInt("count(maBD)");
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return n;
-//    }
-//
-//    public static int findCByMon(String maMH) {
-//        Connection con = DBConnectionUtils.getConnection();
-//        int n = 0;
-//        String sql = "SELECT count(maBD) \n"
-//                + "from diem\n"
-//                + "where tongDiem >= 5.5 and tongDiem < 7 and maMH = ?";
-//        try {
-//            PreparedStatement pt = con.prepareStatement(sql);
-//            pt.setString(1, maMH);
-//            ResultSet rs = pt.executeQuery();
-//            while (rs.next()) {
-//                n = rs.getInt("count(maBD)");
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return n;
-//    }
-//
-//    public static int findDByMon(String maMH) {
-//        Connection con = DBConnectionUtils.getConnection();
-//        int n = 0;
-//        String sql = "SELECT count(maBD) \n"
-//                + "from diem\n"
-//                + "where tongDiem >= 4 and tongDiem < 5.5 and maMH = ?";
-//        try {
-//            PreparedStatement pt = con.prepareStatement(sql);
-//            pt.setString(1, maMH);
-//            ResultSet rs = pt.executeQuery();
-//            while (rs.next()) {
-//                n = rs.getInt("count(maBD)");
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return n;
-//    }
-//
-//    public static int findFByMon(String maMH) {
-//        Connection con = DBConnectionUtils.getConnection();
-//        int n = 0;
-//        String sql = "SELECT count(maBD) \n"
-//                + "from diem\n"
-//                + "where tongDiem < 4 and maMH = ?";
-//        try {
-//            PreparedStatement pt = con.prepareStatement(sql);
-//            pt.setString(1, maMH);
-//            ResultSet rs = pt.executeQuery();
-//            while (rs.next()) {
-//                n = rs.getInt("count(maBD)");
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return n;
-//    }
-//
-//    public List<monhoc> findAllMonHOc() {
-//        Connection con = DBConnectionUtils.getConnection();
-//        List<monhoc> monhocList = new ArrayList<monhoc>();
-//        String sql = "select * from monhoc";
-//        try {
-//            Statement st = con.createStatement();
-//            ResultSet rs = st.executeQuery(sql);
-//            while (rs.next()) {
-//                monhoc mh = new monhoc(rs.getString("maMH"), 
-//                                        rs.getString("tenMH"));
-//                monhocList.add(mh);
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return monhocList;
-//    }
+    public static int findAByMon(String maMH) {
+        Connection con = DBConnectionUtils.getConnection();
+        int n = 0;
+        String sql = "SELECT count(maBD) \n"
+                + "from diem\n"
+                + "where tongDiem >= 8.5 and maMH = ?";
+        try {
+            PreparedStatement pt = con.prepareStatement(sql);
+            pt.setString(1, maMH);
+            ResultSet rs = pt.executeQuery();
+            while (rs.next()) {
+                n = rs.getInt("count(maBD)");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return n;
+    }
+
+    public static int findBByMon(String maMH) {
+        Connection con = DBConnectionUtils.getConnection();
+        int n = 0;
+        String sql = "SELECT count(maBD) \n"
+                + "from diem\n"
+                + "where tongDiem >= 7 and tongDiem < 8.5 and maMH = ?";
+        try {
+            PreparedStatement pt = con.prepareStatement(sql);
+            pt.setString(1, maMH);
+            ResultSet rs = pt.executeQuery();
+            while (rs.next()) {
+                n = rs.getInt("count(maBD)");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return n;
+    }
+
+    public static int findCByMon(String maMH) {
+        Connection con = DBConnectionUtils.getConnection();
+        int n = 0;
+        String sql = "SELECT count(maBD) \n"
+                + "from diem\n"
+                + "where tongDiem >= 5.5 and tongDiem < 7 and maMH = ?";
+        try {
+            PreparedStatement pt = con.prepareStatement(sql);
+            pt.setString(1, maMH);
+            ResultSet rs = pt.executeQuery();
+            while (rs.next()) {
+                n = rs.getInt("count(maBD)");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return n;
+    }
+
+    public static int findDByMon(String maMH) {
+        Connection con = DBConnectionUtils.getConnection();
+        int n = 0;
+        String sql = "SELECT count(maBD) \n"
+                + "from diem\n"
+                + "where tongDiem >= 4 and tongDiem < 5.5 and maMH = ?";
+        try {
+            PreparedStatement pt = con.prepareStatement(sql);
+            pt.setString(1, maMH);
+            ResultSet rs = pt.executeQuery();
+            while (rs.next()) {
+                n = rs.getInt("count(maBD)");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return n;
+    }
+
+    public static int findFByMon(String maMH) {
+        Connection con = DBConnectionUtils.getConnection();
+        int n = 0;
+        String sql = "SELECT count(maBD) \n"
+                + "from diem\n"
+                + "where tongDiem < 4 and maMH = ?";
+        try {
+            PreparedStatement pt = con.prepareStatement(sql);
+            pt.setString(1, maMH);
+            ResultSet rs = pt.executeQuery();
+            while (rs.next()) {
+                n = rs.getInt("count(maBD)");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return n;
+    }
+
 }

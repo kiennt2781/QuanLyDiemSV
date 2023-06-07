@@ -208,8 +208,52 @@
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Thống kê theo môn học
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="<%=request.getContextPath()%>/admin/tkkhoatoan" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Khoa Toán</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%=request.getContextPath()%>/admin/tkkhoaxahoi" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Khoa Xã Hội</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%=request.getContextPath()%>/admin/tkkhoacntt" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Khoa CNTT</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%=request.getContextPath()%>/admin/tkkhoakinhte" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Khoa Kinh Tế</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%=request.getContextPath()%>/admin/tkkhoangonngu" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Khoa Ngôn Ngữ</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
+                <br>
+                <br>
+                <br>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
